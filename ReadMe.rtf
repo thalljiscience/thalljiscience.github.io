@@ -1,0 +1,1434 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033\deflangfe1033{\fonttbl{\f0\fmodern\fprq1\fcharset0 Courier New;}{\f1\fswiss\fprq2\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\nowidctlpar\f0\fs18 Readme File for BioEdit v7.7.1.0\par
+\par
+BioEdit is a graphical biological sequence editor that runs on\par
+Windows 95, 98, NT, 2000, XP, 7, 8 and 10.  The purpose of this program is \par
+to provide a useful molecular biology tool which can be started \par
+up and used easily with as little effort required as possible to \par
+learn the program.\par
+\par
+***** DISCLAIMER ******\par
+\par
+** The author makes no guarantee as to the fitness or \par
+suitability of this software for any purpose.  BioEdit\par
+is offered as is and no responsibility will befall the \par
+author for any problems caused by or correlated with the \par
+use of this software, including, but not limited to, \par
+damages, non-suitability, misuse, data loss, or wasted time. ** \par
+\par
+***** By choosing to install this software you are accepting \par
+the terms of this license.  If you do not want to accept these\par
+terms, you must not install the software *****\par
+---------------------------------------------------------------------\par
+\par
+Contents of this File:\par
+-- Files shipped with the BioEdit v7.7.1.0 installation\par
+-- Features included in BioEdit v7.7.1.0\par
+-- Accessory applications included with installation.\par
+-- Installing TreeView\par
+-- Installing ReadSeq for 64-bit machines\par
+-- Bug fixes/changes since last version\par
+-- How to contact the author\par
+\par
+---------------------------------------------------------------------\par
+\par
+Files shipped with the BioEdit v7.7.1.0 installation:\par
+\par
+The following files and folders are installed to the directory\par
+in which you install BioEdit:\par
+\par
+In installation directory:\par
+\par
+The installation folder will also contain the following files:\par
+\tab _deisreg.isr\par
+\tab _isreg32.dll\par
+\tab BioEdit.exe (main program)\par
+\tab DeIsL1.isu\par
+\tab ReadSeqv202.zip (64-bit implementation of ReadSeq sequence format converter)\par
+\tab TreeV32.zip (the TreeView installation distribution)\par
+\tab TreeView.txt (TreeView information)\par
+\tab HttpClient.dll (required for NCBI connectivity)\par
+\tab msvcr120d.dll (required for NCBI connectivity)\par
+\tab license.txt (license agreement)\par
+\tab Readme.txt (this file)\par
+\par
+apps (accessory applications, Web pages and WWW bookmarks)\par
+\tab accApp.ini\par
+\tab blast.txt\par
+\tab btblastall.exe\par
+\tab blastcl3.exe\par
+\tab blastcli.exe\par
+\tab bookmark.txt\par
+\tab cap.doc\par
+\tab cap.EXE\par
+\tab clustalw.exe\par
+\tab clustalw.txt\par
+\tab DNADIST.DOC\par
+\tab dnadist.exe\par
+\tab DNAML.DOC\par
+\tab dnaml.exe\par
+\tab DNAMLK.DOC\par
+\tab DNAMLK.EXE\par
+\tab DNAPARS.DOC\par
+\tab DNAPARS.EXE\par
+\tab DOS4GW.EXE\par
+\tab fastDNAml.doc\par
+\tab fastdnaml.EXE\par
+\tab FITCH.DOC\par
+\tab Fitch.exe\par
+\tab btformatdb.exe\par
+\tab KITSCH.DOC\par
+\tab KITSCH.EXE\par
+\tab NEIGHBOR.DOC\par
+\tab NEIGHBOR.EXE\par
+\tab ncbi_presets.ini\par
+\tab phylip.map\par
+\tab PROML.DOC\par
+\tab\lang1036 proml.exe\par
+\tab promlk.exe\par
+\tab PROTDIST.DOC\par
+\tab PROTDIST.EXE\par
+\tab PROTPARS.DOC\par
+\tab PROTPARS.EXE\par
+\tab\lang1033 readseq.exe\par
+\tab ReadSeq.txt\par
+\par
+\par
+database (empty folder)\par
+\tab\par
+\par
+help\par
+\tab BioEdit.cnt\par
+\tab BioEdit.GID (not installed -- will appear after the first time help is accessed)\par
+\tab Bioedit.hlp\par
+\par
+sounds\par
+\tab A small list of small sound files containing individual character reads\par
+\par
+tables\par
+\tab Bacterial_phylogeny.tab\par
+\tab BLOSUM62\par
+\tab BLOSUMcoloring.tab\par
+\tab chao_fasman.tab\par
+\tab codon.tab\par
+\tab codonDegeneracyColoring.tab\par
+\tab color.tab\par
+\tab dayhoff\par
+\tab defcolor.tab\par
+\tab enzyme.tab\par
+\tab GC.VAL\par
+\tab gencodes.tab\par
+\tab gonnet\par
+\tab IDENTIFY\par
+\tab kyteDoolittle.tab\par
+\tab KyteDoolittleHydrophobicityColoring.tab\par
+\tab ManuelRuizColorTable.tab\par
+\tab match\par
+\tab PAM120\par
+\tab\lang1046 Pam250\par
+\tab PAM250Coloring.tab\par
+\tab PAM40\par
+\tab PAM80\par
+\tab SEQCODE.VAL\par
+\tab taxGroups.tab\par
+\tab Viral_Phylogeny.tab\par
+\tab\par
+\par
+---------------------------------------------------------------------\par
+\tab\tab\tab\par
+\lang1033 Features included in BioEdit v7.7.1.0:\par
+ \par
+-- An easy, graphical interface for sequence manipulation \par
+   and editing, modeled after SeqApp and SeqPup (Don Gilbert).\par
+-- Variable editing options, including 'select and drag' sliding and \par
+   'grab and drag' sliding of residues, variable selection options, \par
+   mouse-click insert and delete of gaps, full column selecting, \par
+   on-screen editing with cut, copy and paste, and auto-scrolling of \par
+   edit window.\par
+-- Anchor columns to protect aligned areas.\par
+-- Read and edit ABI and SCF sequence files, display traces with several \par
+   options (reverse complement, select, copy, export, scale, zoom).\par
+-- Print ABI files with professional-looking formatted output and file\par
+   header information.\par
+-- Batch conversion of ABI to SCF format sequence traces.  \par
+-- Group sequences into groups or families.\par
+-- Lock alignment of grouped sequences for synchronized hand alignment \par
+   adjustements.\par
+-- Annotate sequences with graphical features with dynamic view in\par
+   alignment windows including feature anntation information tooltips. \par
+-- Lock sequences to prevent accidental edits.\par
+-- Specify characters to be considered valid for calculations in amino acid \par
+   and nucleotide sequences.\par
+-- Sort sequences by name, LOCUS, DEFINITION, ACCESSION, PID/NID, REFERENCES,\par
+   COMMENTS or by residue frequency in a selected column. \par
+-- Verbally read back sequences in single sequene editor to verify hand-typed\par
+   sequence entries.\par
+-- Configure accessory application interfaces to run external analysis \par
+   programs through a graphical interface created by BioEdit.  \par
+   Automatically feed information to and retrieve files from external apps.  \par
+   External apps run in a separate thread to allow simultaneous use of BioEdit \par
+   while running time-consuming processes.  Output from an external program \par
+   may be automatically opened by another program.\par
+-- Split window for simultaneous editing of two different places in the same \par
+   file.\par
+-- Merge alignments through a reference sequence.\par
+-- Append one alignment to the end of another.\par
+-- View phylip trees, manipulate nodes, and print trees.\par
+-- Configure your own menu shortcuts for alignment windows.\par
+-- Block copying of residues to clipboard allowing for pasting of full \par
+   alignments or parts of alignments into a word processor.\par
+-- Basic sequence manipulations (copy/paste of sequences between documents, \par
+   translation and degenerate encoding, RNA->DNA->RNA, reverse/complement, \par
+   upper/lowercase).\par
+-- Multiple document interface  (Maximum of 20 open alignment documents at a \par
+   time, but no set limit on other open windows).\par
+-- Plasmid Drawing and graphical annotation\par
+-- Dynamic memory allocation with support for up to 20,000 sequences per \par
+   document. Sequences up to 4.6 million bases (the E. coli genome) and \par
+   alignments >6000 seqs (the prokaryotic 16S rRNA alignment) have been tested.\par
+-- Open and save large alignment files quickly with the BioEdit Project binary\par
+   file format.\par
+-- Formatted translations of nucleic acid sequences with codon usage summary, \par
+   choice of one- or three-letter amino acid codes, translation of selected\par
+   region only of nucleic acid, and choice of start/stop codons \par
+-- Six-Frame translation of nucleic acid sequences into Fasta-format ORF lists.  \par
+   Tested by successfully translating entire E. coli genome (4.6 Mbases) into \par
+   10,125 sorted raw codon stretches of 100 or more amino acids and 39,880 \par
+   unsorted raw codon stretches of 50 or more amino acids. \par
+-- Amino acid and nucleotide composition analyses and plots\par
+-- Align protein-encoding nucleic acid sequences through amino acid translation.\par
+-- ClustalW multiple sequence alignment (interface internal, external program by \par
+   Des Higgins et. al.) with auto-update of aligned protein full titles and \par
+   GenBank field information, as well as nucleotide coding sequence when aligned \par
+   from a protein view of nucleotide sequences. \par
+-- Protein hydrophobicity/hydrophilicity plots\par
+-- Protein hydrophobic moment matrices calculated from 0-180 degrees\par
+-- Full choice of system fonts now available in edit window\par
+-- 'Revert to Saved' and 'undo' functions. \par
+-- Edit both amino acid and nucleic acid sequences.\par
+-- Easy point-and-click color table editing, with different tables for protein \par
+   and nucleic acid sequences.\par
+-- Alignment-responsive shading based on information content of alignment positions.\par
+-- Identity / Similarity shading in alignment window with user-defined threshold.\par
+-- BioEdit currently reads and writes BioEdit, GenBank, Fasta, NBRF/PIR,  \par
+   Phylip 3.2 and Phylip 4 formats.\par
+-- Additionally reads (but does not write) Clustal and GCG formats\par
+-- Autodetect of sequence format -- just double click the file and go!\par
+-- Open and import sequences and alignments in any compatible format right\par
+   from the clipboard\par
+-- Import/Export filter for 10 additional formats (Using Don Gilbert's ReadSeq).\par
+   ReadSeq auto-detects the sequence format as well -- 64-bit port by Mathew D. Pagel\par
+-- Import/Append one file on to the end of another (regardless of file format).\par
+   Import also auto-detects format\par
+-- Basic rich-text editor.\par
+-- Restriction mapping with any or all-frames translation, multiple enzyme and \par
+   output options and circular DNA option.  Manually choose custom lists of enzymes\par
+   for restriction maps\par
+-- Choose restriction enzymes by manufacturer\par
+-- Auto-linking to your favorite Web Browser (e.g., Netscape or Internet Explorer).\par
+-- World Wide Web Bookmarks \par
+-- NCBI BLAST tools, including BLAST 2.0 Internet client and local BLAST with \par
+   the ability to compile local databases from Fasta files\par
+-- Configurable formatted text print with dynamic print preview,\par
+-- Configurable formatted shaded graphical output with dynamic preview, identity \par
+   and similarity shading, and ability to cut and paste directly to \par
+   graphics/presentation program for generation of figures.\par
+-- Rich text export of formatted, shaded alignment.\par
+-- RNA secondary structure comparative analysis tools, including covariation, \par
+   potential pairings, and mutual information analyses.\par
+-- 2-D matrix plotter for mutual information output with dynamic data viewing \par
+   with the mouse pointer. (Also allows image copy/paste and bitmap save).\par
+-- View sections of very large matrices with plotter (tested on up to 5183x5183 \par
+   matrix = 180 Mb file)\par
+-- Paste over sequence blocks and sequence titles\\\par
+-- Search and replace in titles with wildcards\par
+-- Store taxonomy inforation for sequences and map taxonomies directly from master \par
+   taxonomy tables\par
+-- Retrieve sequences and sequence-associated pubmed references directly from the WWW.\par
+\par
+---------------------------------------------------------------------\par
+\par
+Accessory applications included with this installation \par
+(preconfigured for use with BioEdit):\par
+\par
+\tab\par
+\tab blastall     -- Authors: Stephen Altschul, Warren Gish, Webb Miller, \par
+                               Eugene W. Myers and David J. Lipman \par
+\tab blasctcl3    -- Authors: Stephen Altschul, Warren Gish, Webb Miller, \par
+                               Eugene W. Myers and David J. Lipman \par
+\tab CAP          -- Author:  Xiaoqiu Huang\par
+\tab ClustalW     -- Authors: Des   Higgins, Toby  Gibson, Julie Thompson.\par
+\tab\tab\tab\tab Rebuilt by Tom Hall (main code not modified) to run \par
+\tab\tab\tab\tab under Windows XP)\par
+\tab DNAdist      -- Author:  Joe Felsenstein\par
+\tab DNAml        -- Author:  Joe Felsenstein \par
+\tab DNAmlk       -- Author:  Joe Felsenstein\par
+\tab DNAPars      -- Author:  Joe Felsenstein\par
+\tab FastDNAml    -- Authors: Gary J. Olsen, Hideo Matsuda, Ray Hagstrom, \par
+                               and Ross Overbeek \par
+\tab Fitch        -- Author:  Joe Felsenstein \par
+\tab formatdb     -- Authors: Stephen Altschul, Warren Gish, Webb Miller, \par
+                               Eugene W. Myers and David J. Lipman \par
+\tab Kitsch       -- Author:  Joe Felsenstein \par
+\tab Neighbor     -- Author:  Joe Felsenstein\par
+\tab Proml        -- Author:  Joe Felsenstein \par
+\tab Protdist     -- Author:  Joe Felsenstein \par
+\tab Protpars     -- Author:  Joe Felsenstein \par
+\tab readSeq      -- Author:  Don Gilbert, 64-bit port by Mathew D. Pagel\par
+\tab TreeView     -- Author:  Roderic D.M. Page\par
+\par
+If distribution of any of these programs becomes a problem, any or all may have \par
+to be removed in future releases.  However, the BioEdit configuration interface \par
+makes it relatively easy to add applications to the BioEdit Accessory Applications \par
+menu.\tab  \par
+\par
+---------------------------------------------------------------------\par
+Installing TreeView:\par
+\par
+TreeView is a phylogenetic tree viewing program written by Roderic \par
+D.M. Page.  Previous versions of BioEdit included a distribution of\par
+the TreeView executable and supporting libraries in the apps folder.  \par
+At the request of the author full TreeView installation is now \par
+distributed with BioEdit.  This installation is contained within the \par
+file called TreeView.zip.\par
+\par
+To install TreeView, unzip the file to a temporary directory, then run\par
+the program called "setup.exe" which will be created.  TreeView will \par
+install itself on your system.\par
+\par
+To configure TreeView to run through the accessory apps menu of BioEdit, \par
+choose Add/Remove/Modify an Accessory Application from the Accessory \par
+Application menu.  In the "Name of Accessory" box, type \ldblquote TreeView\rdblquote .  \par
+Press "Specify" next to the \ldblquote Program\rdblquote  Box and browse to the new location \par
+for the TreeView.exe program.  Check the box called \ldblquote Prompt for input\par
+file\rdblquote .  In the \ldblquote General Description\rdblquote  box, type \ldblquote TreeView version 1.5.2.  \par
+Copyright Roderic D.M. Page, 1998. r.page@bio.gla.ac.uk. \par
+
+\pard {{\field{\*\fldinst{HYPERLINK http://www.taxonomy.zoology.gla.ac.uk/rod/rod.html }}{\fldrslt{http://www.taxonomy.zoology.gla.ac.uk/rod/rod.html\ul0\cf0}}}}\f0\fs18\rdblquote  without any carriage \par
+returns.  Then press \ldblquote Add / Modify\rdblquote  at the bottom of the dialog.  Upon \par
+closing the window, you will be prompted to have BioEdit close and restart.  \par
+For more information on installing accessory applications, see Configuring \par
+and Using External Applications in the BioEdit on-line help.\par
+
+\pard\brdrb\brdrs\brdrw15\brsp20 \nowidctlpar\par
+
+\pard\nowidctlpar\par
+Note For Windows 7, 64-bit users of TreeView:\par
+The version of TreeView distributed with BioEdit will not work correctly.  \par
+Rod Page offers an updated version of TreeView at\par
+
+\pard {{\field{\*\fldinst{HYPERLINK http://darwin.zoology.gla.ac.uk/~rpage/treeviewx/download.html }}{\fldrslt{http://darwin.zoology.gla.ac.uk/~rpage/treeviewx/download.html\ul0\cf0}}}}\f0\fs18\par
+that does work well on this platform. To install this version such that \par
+it works with pre-configured Phylip accessory apps within BioEdit, it is \par
+best to override the default installation directory when installing \par
+TreeViewX to C:\\Program Files\\Rod Page\\TreeView.&nbsp; You can then either \par
+1.) Change the name of the file C:\\Program Files\\Rod Page\\TreeView\\tv.exe to \par
+C:\\Program Files\\Rod Page\\TreeView\\treev32.exe or 2.) modify accessory \par
+application configurations to point to C:\\Program Files\\Rod Page\\TreeView\\tv.exe.\par
+\par
+---------------------------------------------------------------------\par
+\par
+Installing ReadSeq for 64-bit machines:\par
+Don Gilbert's original readSeq sequence converter was a 16-bit application and\par
+does not operate on 64-bit Windows machines, even in compatibility mode.  \par
+Mathew D. Pagel has produced a Java-based port readSeq that worked flawlessly when\par
+I tested it.  The original distribution of version 2.02 from \par
+{{\field{\*\fldinst{HYPERLINK https://code.google.com/p/readseq/downloads/detail?name=ReadSeqv202.zip&can=2&q= }}{\fldrslt{https://code.google.com/p/readseq/downloads/detail?name=ReadSeqv202.zip&can=2&q=\ul0\cf0}}}}\f0\fs18\par
+is included in the BioEdit installation with the author's permission to allow users\par
+to install a compatible version of readSeq if they wish.  Follow the instructions in\par
+the file "Instructions.txt" found in ReadSeqv202.zip within your BioEdit installation\par
+directory after installing BioEdit to install the updated port of readSeq.\par
+\par
+---------------------------------------------------------------------\par
+\par
+BioEdit has not been regularly maintained for several years, however, a few \par
+updates have been made simply to keep the program generally functional.\par
+The following list is not complete because the time has not been available to \par
+adequately keep track. The help file has not been updated to reflect most changes:\par
+\par
+Since v7.2.6:\par
+-- Rebuilt program to restore Ctrl+Right click functionality for reference sequence choice.\par
+\par
+Since v7.2.4:\par
+-- Added functionality for https to fix download of sequence data from NCBI.\par
+\par
+Since v7.1.11:\par
+-- The dot-plot feature for pairwise sequence comparison was brought back by request from   \par
+   a user (Under Sequence->Pairwise alignment->Dot Plot (pairwise comparison).\par
+-- Taxonomy mapping from sequence title was brought back under Sequence->Phylogeny / \par
+   Taxonomy->Extract Taxonomy->(three mapping options).  Only bacterial and viral\par
+   taxonomies are supported by default, but a custom table can be made by opening the file \par
+   <BioEdit>\\tables\\\f1\fs22  \f0\fs18 Bacterial_phylogeny.tab or <BioEdit>\\tables\\\f1\fs22  \f0\fs18 Viral_Phylogeny.tab, \par
+   copying the contents into MS Excel, and creating a custom table according to the same\par
+   general template, then saving the custom file as a tab-delimited file.  If time permits,\par
+   an auto-map of taxonomy from NCBI may be added in the future for convenience.\par
+-- A preferences option to not write to C:\\Windows\\ncbi.ini when performing BLAST-related\par
+   functions was added to work around the error received by users without read/write access\par
+   to the C:\\Windows directory.  This may mean one needs to manually create ncbi.ini within\par
+   C:\\Windows as a one-time event (or have the IT department do it for those without access\par
+   privileges on the computer.\par
+\par
+Since v7.0.9:\par
+-- The pairwise alignment function was fixed to agree with examples in the help \par
+   documentation.\par
+-- Right-click context menu added to title panel in sequence document.\par
+-- Support for local BLAST and accessory application launching fixed in \par
+   Windows 7 64-bit version.\par
+-- GenBank sequence retrieval updated.\par
+-- String-to-floating point number conversion problems (hopefully) fixed for \par
+   European computers with particular regional settings.\par
+-- Single-sequence translation in selected frames with codon usage reporting \par
+   was fixed.  There was a memory bug when translated sequence was not an exact \par
+   multiple of three in length.\par
+-- Associating a phylogenetic tree with an alignment from the phylogenetic tree view \par
+   was fixed.\par
+-- Six-frame translations were fixed to allow producing ORF lists from multiple \par
+   sequences at once.\par
+-- Added option to save six-frame translations to a file rather than loading \par
+   directly into text editor.\par
+
+\pard\brdrb\brdrs\brdrw15\brsp20 \nowidctlpar\par
+
+\pard\nowidctlpar\par
+The following changes and/or fixes have been made since version v7.0.8:\par
+-- The restriction map utility was fixed.  It was broken by the relocation \par
+   of the BioEdit.ini file to the program install directory.\par
+-- An option was put into the preferences to allow temporary redirecting \par
+   of file paths for blast database creation and search execution to the \par
+   root directory.  The reason for this is that if the name of the database \par
+   directory (when doing a search) or source directory for a fasta file \par
+  (when converting to a blast database) is too long, it can overload the \par
+   maximum command line length for running blastall.exe or formatdb.exe\par
+   (the NCBI command-line programs used for blast utilities).\par
+   \par
+\par
+The following changes and/or fixes have been made since version v7.0.7:\par
+-- Moved BioEdit.ini to the program current run directory.  Hopefully this will \par
+   help on computers without write access to the system folder.\par
+\par
+The following changes and/or fixes have been made since version v7.0.5:\par
+-- Updated NCBI sequence retrieval to deal with recent changes at NCBI that broke the sequence retrieval functions in the \par
+previous version.\par
+-- Note:  (not a change, per se):  Scoring in pairwise alignment functions does not agree with the example in the help \par
+document.  This will be investigated if/when I  have time.  I had considered removing the functions, but decided no to on \par
+the grounds that they generally work OK for quick manipulations and can be useful as a  time-saving utility.  They should \par
+not, however, be used as a teaching tool.\par
+\par
+The following changes and/or fixes have been made since version v7.0.4:\par
+-- Changing proxy setting for sequence retrieval from GenBank had no \par
+   affect because the routine was looking in the wrong directory for the\par
+   BioEdit.ini file.\par
+\par
+The following changes and/or fixes have been made since version v7.0.3:\par
+-- A bug in sequence retrieval from GenBank fixed that caused retrievals \par
+   to come back saying " ... format unrecognized".\par
+\par
+The following changes and/or fixes have been made since version v7.0.2:\par
+-- A memory bug in RNA covariation routine was fixed.\par
+\par
+The following changes and/or fixes have been made since version v7.0.1:\par
+-- The blast programs blastall and formatdb were modified to allow passing\par
+   parameters in a file as well as on the command line to get around the \par
+   Windows xommand line length limit\par
+-- blastall and formatdb were modified to allow passing a darabase name\par
+   with spaces (original verion tries to parse the name into multiple\par
+   file names)\par
+-- When launching an alignment file from the Windows Explorer, BioEdit now\par
+   tries to open the file in an existing BioEdit instance if there is one\par
+   open, rather than opening a new one.\par
+-- Updated installer will hopefully take care of the trouble some people \par
+   have been having installing BioEdit \par
+\par
+The following changes and/or fixes have been made since version v7.0.0:\par
+-- The optimal pairwise alignment routine was inadvertently overwritten \par
+   with a test version that was only functional on nucleic acid sequences.  \par
+   This caused pairwise alignment on amino acid sequences to fail.  \par
+   The original alignment method was put back.\par
+\par
+The following changes and/or fixes have been made since version v6.0.7:\par
+-- Documentation (online help file) was updated for the first time \par
+   since version 5.0.6.\par
+-- Automatic links to NCBI BLAST via the World Wide Web were added back \par
+   with current NCBI pages with editable addresses.\par
+-- Error on doing local blast searches when swap directory contained \par
+   spaces fixed.  However, BLAST won't work if entire command line is \par
+   too long for Windows, so keeping the BioEdit swap directory in a \par
+   path name as short as possible (e.g. C:\\BioEdit\\Temp) is a good idea.\par
+-- Some context-sensitive help added (not complete).\par
+-- Fixed bug in graphic view that caused Error when view is plotted in\par
+   dot conservation mode and the "reference" sequence is shorter than\par
+   one of the alignment sequences.\par
+-- Fixed a bug in floating point conversion with non-English regional\par
+   settings (when a ',' is used as decimal separator) that would cause\par
+   an error when trying to translate nucleotide sequences into protein \par
+   (bug manifested when reading in the "codon.tab" file and converting\par
+   frequency numbers -- the regional settings were not being detected\par
+   properly).\par
+-- Added support for mouse wheel in Alignment document window.  Clicking\par
+   the mouse wheel button toggles between vertical and horizontal scroll\par
+   function.\par
+-- Fixed bug in right-click-based gap deletion in grouped sequences with\par
+   group-locked alignment status (gaps were being deleted only for edited\par
+   sequence and no entire locked group).\par
+-- A couple of other bugs relating to adding or deleting gaps around a \par
+   residue with the right mouse button in a sequence which is a member \par
+   of an alignment-locked grouped were fixed.  Behavior was updated to \par
+   only operate upon sequences that are not grouped together in an \par
+   alignment-locked group with the sequence in question.\par
+-- Fixed bug in clustal auto-link that caused VERSION field to be lost\par
+   in aligned sequences.\par
+-- Removed the sort function "selected sequences by residue frequencies"\par
+   This was a one-time utility that does not work as the title implies and\par
+   was not supposed to be present in the public version.\par
+-- Removed "Group top-down by identical sequences" under Sort menu.  This\par
+   function did not make much sense for most contexts.\par
+\par
+The following changes and/or fixes have been made since version v6.0.6:\par
+This is a list of counterintuitive changes to deal with a set of \par
+counterintuitive features in the short term\par
+\par
+-- Removed automatic taxonomy mapping support -- its undocumented and caused \par
+   confusion.\par
+-- Removed primer pair/oligo mapping and Tm calculation -- undocumented and \par
+   caused confusion.\par
+-- Removed query functions for sequence features -- again, undocumented and \par
+   caused confusion.\par
+\par
+The following changes and/or fixes have been made since version v6.0.5:\par
+\par
+-- Removed "Auto-update View Options" because it causes long delays in \par
+   Win2000 and XP.\par
+-- Fixed a bug in Graphic View new to v6.0.5 causing access violation \par
+   if View Features mode is on in document window.\par
+\par
+The following changes and/or fixes have been made since version v5.0.9:\par
+Note that this list is not complete:  \par
+-- Some memory troubles with grouped sequences fixed.  Using sequence \par
+   groups is now more stable.\par
+-- Access violations when deleting sequences in dot conservation mode \par
+   or vertically scrolling very long alignments in dot conservation mode \par
+   fixed.\par
+-- Retrieve sequences directly from GenBank over the WWW.\par
+-- Automatically retrieve GenBank info from GenBank for existing\par
+   sequences for Genbank-fasta formatted titles\par
+   (eg. gi|16082679|ref|NC_003132.1|).\par
+-- Automatically retrieve Pubmed references for GenBank sequences.\par
+-- Restriction on number of sequences removed.  All memory allocation\par
+   for sequences was made dynamic.\par
+-- Paste over sequence blocks to quickly create subalignments based upon\par
+   a region of a larger alignment or produce alignment concatenations. \par
+-- Paste over titles, and paste onto (concatenate to) titles.\par
+-- Copy sequence titles added in a couple of variations.\par
+-- Copy nucleic acid sequence blocks in reverse complemented orientation\par
+-- Copy sequences in a tab-delimited format (for pasting into a \par
+   spreadsheet)\par
+-- Find/replace function for sequence information\par
+-- flexible find/replace in titles with indexed wildcards\par
+-- filter leading and trailing characters off of sequence titles.\par
+-- Find titles equal to, beginning with, or containing lists of strings.\par
+-- Unique based upon sequences or title with a two-step sort + select \par
+   & delete process to remove redundant sequences or titles\par
+-- Query sequences by data by TITLE, LOCUS, DEFINITION, ACCESSION, \par
+   VERSION / GI, PID (or SID), DBSOURCE, KEYWORDS, REFERENCES, FEATURES, \par
+   COMMENT, and/or Phylogeny.\par
+-- Invert selection of sequences or residues\par
+-- Edit information for multiple sequences at once with Sequence-->Edit\par
+   all selected.\par
+-- Extract subsequences (including orientation for DNA) from lists of\par
+   coordinates (with choice of alignment-gapped or true positions) \par
+-- Query and extract annotated sequence features.\par
+-- Map true positions from lists of alignment positions.\par
+-- Add tabulated taxonomy information to sequences.\par
+-- Several variable ways of renaming titles in batch mode \par
+   (Sequence-->Rename-->...)\par
+-- Several ways to filter out sequences based upon inclusion/exclusion\par
+   of specific characters, length, or number of leading, trailing, or \par
+   total gaps.\par
+-- Sort by phylogeny\par
+-- Invert current sequence order\par
+-- Map oligos and primer pairs to alignments based upon mismatch threshold\par
+-- Calculate DNA oligo Tm's with mismatches based upon thermodynamic\par
+   parameters from John SantaLucia's lab.\par
+-- Calculate Tm's for oligos and compare them to same region of other \par
+   sequences from alignment window using right mouse button clicks.\par
+-- Several operations on local sequence region selection with right \par
+   mouse button click.\par
+-- Speed enhanced on pairwise alignment of large similar sequences\par
+-- Align sequences to an existing alignemnt by pairwise alignment to\par
+   phylogenetic near neighbor in existing alignment.\par
+-- Choose individual restriction enzymes when creating a restriction map.\par
+-- Easily flush an alignment out with gaps to produce a rectangular matrix\par
+ \par
+The following changes and/or fixes have been made since version v5.0.8:\par
+-- Made a minor adjustment to preferences for characters to be treated\par
+   as resides -- There's an option to either include them as positions\par
+   or ignore them completely fro similarity/ID shading.\par
+-- Fixed a bug in pasting into the single sequence editor window.\par
+\par
+The following changes and/or fixes have been made since version v5.0.7:\par
+-- Protein alignments in new installations may have shading problems\par
+   because when the option to explicitly specify all characters to be\par
+   considered valid for calculations (including ID/similarity shading),\par
+   'N' was accidentally missed for amino acids.  Several installations \par
+   probably have gone out with 'N' missing from the list of amino acids.\par
+   This can cause protein alignments to have similarity/identity shading\par
+   errors.  'N' has been put back into the default.\par
+-- Access violations that could occurr when typing in an RNA structure \par
+   mask while in RNA base pair coloring mode, and when there is a non-\par
+   symmetric number of openeing vs. closing brackets.  This has been \par
+   fixed.\par
+\par
+The following changes and/or fixes have been made since version v5.0.6:\par
+-- Added base pair mask support for RNA alignments\par
+-- Added base-pair coloring for RNA alignments with user-defined color\par
+   scheme\par
+-- Fixed bug in creating local Blast databases from within a sequence\par
+   document\par
+\par
+The following changes and/or fixes have been made since version v5.0.5:\par
+-- Added support for phylogenetic trees without distance information.\par
+-- Added save function for phylogenetic trees.\par
+-- Added linking of phylogentic trees to an alignment.\par
+-- Multiple trees may be imported from one or several files.\par
+-- Incorporated phylogentic trees are saved with alignment in BioEdit\par
+   alignment format.\par
+-- Added option to view trees with or without distance information.\par
+-- Updated sequence label editing to allow spaces in comments.\par
+\par
+The following changes and/or fixes have been made since version v5.0.4:\par
+-- Added node flipping to phylogenetic tree viewer.\par
+-- Added printing to phylogenetic tree viewer.\par
+-- Fixed bug in the "append alignments" (the first alignment was\par
+   appended to itself) -- bugged version was only out for one day. \par
+\par
+The following changes and/or fixes have been made since version v5.0.3:\par
+-- Fixed some issues with accessory app linking (problems keep creeping\par
+   up related to the change made in version 5.0.0 to specify a swap folder\par
+   for temp files).\par
+-- Added the option to merge alignments by appending one alignment to the\par
+   end of another.\par
+-- Added a ruimentary tree viewer (VERY unfinished -- only reads phylip\par
+   trees, only in "phylogram" view, no distance ruler yet, no print, \par
+   save or manipulate yet) -- The reason for having an internal tree\par
+   viewer is to in the future allow flipping of nodes and resaving the \par
+   tree for use in nicer tree viewing programs like TreeView that allow\par
+   better formatting, but don't have manipulation options.  Also, it \par
+   would be nice in the future to directly link phylogenetic tree views\par
+   to alignment files for quick phylogeny reference.\par
+\par
+The following changes and/or fixes have been made since version v5.0.2:\par
+-- Added column anchoring to protect areas that are already aligned.\par
+-- Updated translation toggling so that gaps that are expanded back\par
+   from a single gap (when toggling from a protein view to a \par
+   nucleotide view) are always "locked" (to avoid problems with \par
+   inadvertently crunching off-screen gaps that spuriously toggled\par
+   back as "unlocked" when aligning by hand).\par
+-- Fixed a bug that caused RNA covariation, potential pairings, or\par
+   mutual information analyses to crash when "mask numbering" was\par
+   chosen but there was no numbering mask specified.\par
+-- Fixed newly introduced bug the caused MI Examiner to crash when\par
+   no masks are specified.\par
+\par
+The following changes and/or fixes have been made since version v5.0.1:\par
+-- Updated Mutual Information Examiner to handle lists of positions.\par
+-- Added several options to Mutual Information preferences to allow \par
+   variable display of list information in MI Examiner.\par
+-- Added option to export and import color table files.\par
+-- Fixed a bug that caused color table to lock sometimes.\par
+-- Added option to toggle translations using the current selected residue\par
+   as a reference frame.\par
+-- Fixed a bug that caused document to appear hung when sort by base\par
+   frequency was chosen without a selected column.\par
+-- Added ability to sort by selected range of residues.\par
+-- No longer append sequence lengths to titles when saving Fasta files.\par
+-- Added preference (on "General" tab) to require verification for \par
+   revert to saved function.\par
+-- Fixed problem with creating Local Blast databases which would occur \par
+   on machines with no NCBI tools installed. \par
+-- Accessory apps and Blast Internet client are now launched through \par
+   an auto-generated batch file.\par
+\par
+\par
+The following changes and/or fixes have been made since version v5.0.0:\par
+-- Added the option to specify user-defined temp (swap) directory for all\par
+   temporary files and user-defined BLAST database directory so that \par
+   BioEdit may be used from a drive space that does not allow writing \par
+   (actually added to v5.0.0 a few days before 5.0.1 came out).\par
+-- Fixed some bugs associated with running accessory apps from version\par
+   5.0.0 after the temp directory option was added. \par
+\par
+The following changes and/or fixes have been made since version v4.8.10:\par
+(Probably missed a few -- I hadn't updated this file for a while)\par
+-- Added options to specify which characters in nucleic acid and amino \par
+   acid sequences are considered to be valid for calculations.\par
+-- Added options for sorting sequences by title, LOCUS, DEFINITION, \par
+   ACCESSION, PID/NID, REFERENCES, COMMENTS and residue frequency in\par
+   a selected column.\par
+-- Added options to annotate sequences with graphical features, using the \par
+   standard GenBank FEATURES tags as the standard for keeping track of \par
+   annotation "type", but allowing full user control over feature names,\par
+   descriptions, colors, shapes and positions.\par
+-- Added function to automatically annotate graphical features using \par
+   existing GenBank FEATURES field\par
+-- Added options for grouping sequences into groups or families, with \par
+   user-defined coloring of grouped titles and the option to lock the\par
+   alignment of grouped sequences to allow synchronized hand alignment\par
+   adjustments between grouped and locked sequences.\par
+-- Added option to lock individual sequences to prevent accidental edits.\par
+-- Updated the BioEdit file format to save graphical annotations, sequence\par
+   group information, locked sequence information and positional flags.\par
+-- Added function to update previously saved BioEdit plasmid maps with a\par
+   new restriction enzyme file when the ReBase file is changed (changing \par
+   the enzyme.tab file can cause mis-indexing of restriction enzyme sites\par
+   in existing plasmid files).\par
+-- Updated shaded graphic view to correctly do conservation (dot) view \par
+   when that view mode is selected in the alignment window (no longer need\par
+   to create a new dot-plotted alignment and any sequence can be used as the\par
+   reference rather than just the top sequence).\par
+-- Added a "Overwrite" and "Insert" modes to both on-screen and single-\par
+   sequence editor sequence editing.\par
+-- Updated local BLAST interface to feed multiple sequence automatically for \par
+   a batch job, and to allow specification of a permanent file output and \par
+   the option to open output automatically in the BioEdit text editor or not. \par
+-- Modified some menus (Edit and Sequence menus, mainly).  The same options \par
+   (and more) are still there, but submenus having been created to group \par
+   certain related functions including: gap-realted functions, pairwise \par
+   alignment functions, simple manipulations (reverse, uppercase, lowercase,\par
+   remove numbers), and search functions.\par
+-- The "No BLAST" version (BioEdit without local BLAST packaged) was done\par
+   away with -- it's too much of  pain to duplicate everything but one extra\par
+   function and make a whole independent installation when relatively few\par
+   people download that one anyway).\par
+-- At the last minute -- added an option to verbally read back sequences \par
+   (protein, nucleic acid, or anything else) to verify hand-typed sequence\par
+   entries.\par
+-- The docuentation update is NOT yet completed, but is underway.  Program\par
+   documentation is still stuck at version 4.7.8.\par
+\par
+\par
+The following changes and/or fixes have been made since version v4.8.9:\par
+-- Fixed the (re-introduced) bug that caused floating point number\par
+   formatting error when translating nucleic acid sequences on non-US\par
+   regional settings machines\par
+-- Fixed a couple of bugs that affected reading in of sample name and \par
+   version on ABI 310 files\par
+\par
+v4.8.8 -- forgot to document changes\par
+\par
+The following changes and/or fixes have been made since version v4.8.7:\par
+-- Removed the internal web browser\par
+-- Fixed a bug in codon frequency reporting (nucleotide translations)\par
+   that caused floating point numbers to sometimes get jumbled up in \par
+   the output\par
+-- Added a conservation plot toggle to the main alignment window with\par
+   the option to choose the character to draw for a "conserved residue"\par
+   (the "reference" sequence defaults to the first sequence in an \par
+   alignment -- RIGHT-CLICK the mouse over any sequence to change it to\par
+   the current reference sequence for this view option)\par
+-- Fixed a minor bug in setting of custom menu shortcuts for alignment\par
+   documents.  The "Import from clipboard" should now work with a \par
+   user-defined menu shortcut.\par
+\par
+The following changes and/or fixes have been made since version v4.8.6:\par
+-- Added optimal pairwise alignment routine with a summary of percent\par
+   identity and similarity (multiple choices for scoring matrix for \par
+   amino acid alignment, user-defined gap initiate, gap extend and\par
+   nucleotide match parameters, and option for global alignment or\par
+   alignment allowing ends to slide over each other).\par
+-- Added routine to create an alignment that plots all residues that are\par
+   identical to the top sequence in an alignment as a dot.\par
+-- Added a cheap version of a dot plotter for plotting matrix similarity\par
+   between two sequences -- total sequence length product cannot exceed \par
+   2000 x 2000, however, so it's not useful for genome comparisons or \par
+   or even moderately large sequences.\par
+-- Added option to calculate the similarity and/or identity between\par
+   two sequences as they are aligned.\par
+\par
+The following changes and/or fixes have been made since version v4.8.5:\par
+-- 3/10/2000 -- added NCBI blastcl3 to distribution and added a more\par
+   versatile linking interface for the BLAST client -- the old \par
+   BLAST client 2 has apparently been disabled\par
+-- 3/10/2000 -- Added block convention to user-defined motif search.  \par
+   [] brackets indicate ambiguous residues and \{\} brackets indicate\par
+   exclusions (eg [LIV] will accept 'L', 'I' or 'V', whereas \{LIV\} will\par
+   accept anything BUT 'L', 'I' or 'V'.\par
+-- 3/10/2000 -- Fixed bug that caused an error and a blank doc to be \par
+   opened when the alignment control bar was hidden\par
+-- 3/10/2000 -- Fixed a couple of bugs related to reading and writing\par
+   of GenBank files (lines beginning with numbers were truncated and \par
+   manually updating fields sometimes resulted in misformatting) \par
+-- Added an alignment merge funcion which merges two alignments based \par
+   upon a standard common to both alignments\par
+-- Added batch export of ABI raw trace data.\par
+-- Fixed the recently introduced disabling of the ABI/SCF trace print\par
+   option\par
+-- fixed metafile copy and print of reverse-complemented traces\par
+-- improved default scaling of SCF traces for printing and metafile copy\par
+-- fixed bug in graphic view which could affect first time use of \par
+   the graphic view when used with non-US Windows regional settings \par
+\par
+The following changes and/or fixes have been made since version v4.8.4:\par
+\par
+-- 1/28/2000 -- Fixed bug that came out when creating a mask (must have \par
+   been introduced in version 4.7.8).  This bug caused two masks to be\par
+   formed and sequence memory for the first two sequences to get \par
+   cross-linked. (caused by accidentally re-assigning a memory pointer\par
+   rather than an entire data structure).\par
+-- 1/25/2000 -- Fixed bug introduced with the last bug fix that causes \par
+   name mangling of ClustalW 1.4 output and loss of GenBank info when\par
+   running ClustalW 1.4 (the version distributed with BioEdit).\par
+-- Fixed potential bug that comes out if you replace the clustalw 1.4\par
+   (the version distributed with BioEdit) with clustalw 1.8 in the \par
+   apps folder -- clustalw 1.8 will rearrange the order of the input \par
+   sequences, causing sequences and titles to become scrambled in the \par
+   new alignment -- this has been fixed.\par
+-- Added raw data view and analyzed and raw data export from .abi trace \par
+   files.\par
+-- Added option to change starting point of ruler bar in alignment window. \par
+\par
+The following changes and/or fixes have been made since version v4.8.3:\par
+\par
+-- 12/20/1999 -- Added helical wheel diagrams for proteins.  Select a \par
+   protein or portion of a protein and choose Sequence->Protein->Helical\par
+   Wheel Diagram\par
+-- Fixed bug in accessory app launching that causes spaces to be lost in\par
+   command prefixes for inputs and checkboxes\par
+-- Added option to accessory app launching to auto-feed sequences in \par
+   separate files (eg, for Lalign from the Fasta package)\par
+\par
+The following changes and/or fixes have been made since version v4.8.2:\par
+\par
+-- 12/13/1999 -- Fixed bug in hydrophobic moment profiles -- had an \par
+   exponent missing in Fourier equation \par
+-- 12/13/1999 -- Added hydrophobic moment matrix plots (0-180 degrees)\par
+-- 12/13/1999 -- fixed a couple of bugs in trace viewer that caused \par
+   problems with non-U.S. regional settings\par
+-- 12/10/1999 -- Added support for SCF version 2.00 files\par
+\par
+The following changes and/or fixes have been made since version v4.8.1:\par
+\par
+-- 12/7/1999 -- Fixed problem of accessory application info getting \par
+   overwritten when a full install is done with a new BioEdit version\par
+-- Added options to accessory application interface:\par
+    1.  Bypass interface when running an accessory\par
+    2.  Link output(s) of one accessory to another/other accessory(s)\par
+    3.  Create accessory app links that are only called by other accessory\par
+        links and do not show up on accessory app menu\par
+    4.  Automatically truncate titles to 10 characters for programs\par
+        that don't accept long names and/or change spaces to '_'\par
+    5.  Rename redundant sequence names and generate a report file\par
+        specifying title changes\par
+\par
+The following changes and/or fixes have been made since version v4.8.0:\par
+\par
+-- 12/2/1999 -- Fixed a bug in accessory application launching that could\par
+   cause a memory error when running an app from a window that is not a \par
+   sequence alignment document\par
+-- 12/1/1999 -- Fixed on-screen title editing so that double-clicking\par
+   on a selected title still opens the sequence editing box and overrides\par
+   title editing\par
+-- 12/1/1999 -- Added option to disable on-screen editing \par
+-- 12/1/1999 -- Fixed bug in consensus sequence generation. A consensus\par
+   generated from less than all of the sequences in an alignment was using\par
+   frequencies calculated using the total number of sequences rather than\par
+   the selected number\par
+-- 12/1/1999 -- Fixed bug that caused an access violation when \par
+   re-activating a document that had sequences deleted (introduced with\par
+   version 4.7.8)\par
+-- A bug was fixed that caused a memory mix-up when pasting sequences in\par
+   a document in a position other than the end\par
+\par
+The following changes and/or fixes have been made since version v4.7.9:\par
+\par
+-- Added support for SCF sequence trace files\par
+-- Added horizontal and vertical zoom controls to sequence trace form\par
+-- Added crosshairs with trace position reporting in trace form\par
+-- Added batch conversion of ABI files to SCF format\par
+-- Traces draw faster on the screen\par
+-- Fixed another bug in on-screen sequence title editing (when vertical\par
+   bar was scrolled, it was causing trouble with the identity of the \par
+   edited title)\par
+\par
+The following changes and/or fixes have been made since version v4.7.8:\par
+\par
+-- Fixed bug in local BLAST linking that caused failure when operating\par
+   from a directory with a space in its name and using a mtrix other than\par
+   Blosum62\par
+-- Fixed a similar bug in linking to ReadSeq for importing and exporting \par
+   of extra file formats\par
+-- Added "Import from Clipboard" and "New from Clipboard" functions under\par
+   the file menu -- Clipboard contents are treated exactly like a file and\par
+   automatic linking to ReadSeq for importing formats that BioEdit does not\par
+   internally read is maintained\par
+-- Added function for inserting multiple gaps at selected residue positions\par
+   or at specified position in selected sequences\par
+-- Updated on-screen title editing -- use the arrow keys to scroll up and \par
+   down when changing several titles in the same document\par
+-- Fixed a bug in plasmid drawing that caused a floating point error when \par
+   adding a very short feature to a circular plasmid\par
+\par
+\par
+The following changes and/or fixes have been made since version v4.7.7:\par
+\par
+-- Bug that caused edits to sequence titles to also be inserted at cursor\par
+   position when in Edit Residues mode was fixed on 11/17/99 (also caused\par
+   a problem when using alt+ keystrokes to access menus in Edit mode)\par
+-- User-defined motif search function added for amino acid, nucleic acid,\par
+   or simple text.\par
+-- Memory allocation for sequences changed to use less memory (memory was\par
+   being allocated to set aside space for 20,000 sequence structures \par
+   regardless of the number of sequences in a file -- now a single pointer \par
+   is set aside for the max number of allowed sequences (20,000), but no\par
+   memory is allocated until a sequence is created)\par
+-- Bug in ABI trace reader was fixed that caused trace / nucleotide colors\par
+   to be mismatched when the file contained an order other than "GATC"\par
+-- The online help and printable documentation were updated on 11/8/1999\par
+\par
+\par
+The following changes and/or fixes have been made since version v4.7.6:\par
+\par
+-- ABI files may be edited and saved, and edited sequence may be reverted\par
+   to the original, non-editable version.  The edited sequence is opened\par
+   as a sequence/alignment doc upon opening an ABI file.\par
+-- Extended capabilities of restriction mapping module.  Long sequences\par
+   may be mapped (tested up to 1.75 Mb on machine with 128 Mb RAM).  My\par
+   mapping procedure is pretty slow, but 500,000 bp runs in ~2 minutes \par
+   on a 366 MHz Celeron).  Progress indicators added for long sequences.\par
+-- Added local BLAST interface to main program interface (rather than \par
+   just in sequence/alignment docs)\par
+-- The paste in the sequence edit box that caused it to go very slow \par
+   with long sequences has been fixed (>500,000 residue pasting is no\par
+   longer a problem). \par
+\par
+The following changes and/or fixes have been made since version v4.7.5:\par
+\par
+-- Fixed bug in link to ReadSeq that caused it to fail with long file\par
+   names. \par
+-- Added Read-in filter for GCG format\par
+-- fixed small glich in sequence spacing control placement\par
+\par
+The following changes and/or fixes have been made since version v4.7.4:\par
+\par
+-- Fixed a few leftover bugs in the graphic shaded views (mostly spacing)\par
+-- user control over vertical spacing of sequences\par
+-- Added view of similarity scoring matrix files from doc windows\par
+-- edit titles on screen (highlight a title, then click it again)\par
+-- Fixed bug in local blastp -- matrix choices other than BLOSUM62 \par
+   should work now\par
+\par
+The following changes and/or fixes have been made since version v4.7.3:\par
+\par
+-- A rich text export was added to the shaded graphic view utility.  This\par
+   uses the highlight command in the Rich Text Format specification 1.5,\par
+   and is probably compatable only with relatively modern word-processors.\par
+-- Made a few changes and fixes to the shaded view.  \par
+-- Added a "find in next title" function to the main document window\par
+-- Added a few normal and auomated web links \par
+\par
+The following changes and/or fixes have been made since version v4.7.2:\par
+\par
+-- Clustal format (.aln) filter was updated so it now compatible with\par
+   the sequence numbers option in ClustalX\par
+-- A "delete numbers" option was put in under the sequence menu to allow\par
+   easier compatability with copying and pasting from numbered formats\par
+-- In the shaded graphic view, an option to print lines continuously (not\par
+   broken by a space every ten residues) was added\par
+-- An option to place translations below nucleotide sequences in either\par
+   one-letter or three-letter format was added (allows for coloring with\par
+   amino acid color table colors, but no similarity shading of the amino\par
+   acids in this view).\par
+\par
+The following changes and/or fixes have been made since version v4.7.1:\par
+\par
+-- 8/27/1999: Added option for outlines around identity and similarity\par
+   shading in shaded graphic view of alignments\par
+-- 8/27/1999:  Fixed small bug in restriction maps.  If more than one\par
+   enzyme cut at the very position starting a new line on the printed \par
+   map, only the first enzyme would show on the map (though all would \par
+   appear in the lists). \par
+-- User options are provided for a (hopefully) more useful consensus\par
+   sequence generation.\par
+-- The ABI trace viewer was updated to provide summary information and\par
+   to allow copying of the trace window as a bitmap (in last version, \par
+   I forgot to add that the option to copy print pages as Metfiles was\par
+   also added).\par
+-- Support for reading Clustal format has been added (no save, only open).\par
+\par
+The following changes and/or fixes have been made since version v4.7.0:\par
+\par
+-- The graphic shaded view was improved.  It's more like a print preview.\par
+   Also, the option to add numbers to the sides of the sequences has been \par
+   added.\par
+-- *Another* introduced bug was fixed in the accessory applications launch\par
+   interface.  This bug was preventing input and output file name command\par
+   prefixes from being added to the command line (needless to say, many \par
+   apps would not run"\par
+-- Font size control has been added to the single sequence editing box.\par
+-- Accessory apps no longer need to be run from an alignment doc unless\par
+   they operate upon sequence output.\par
+ \par
+The following changes and/or fixes have been made since version v4.6.3:\par
+\par
+-- Support for ABI chromatographs has been added.  Display, zoom, scale,\par
+   select, copy, export and reverse complement sequences from ABI trace \par
+   files.  Also print with professional-looking formatted color output \par
+   similar to commercial output.\par
+-- Some memory leaks were fixed.\par
+\par
+The following changes and/or fixes have been made since version v4.6.2:\par
+\par
+-- Corrected 'Del' key behavior in edit residues mode and in single\par
+   sequence edit interface\par
+-- Added sequence number to beginning of mouse position labels\par
+-- Fixed alignment of ruler ticks for non-type-set fonts\par
+\par
+The following changes and/or fixes have been made since version v4.6.1:\par
+\par
+-- Fixed a bug that caused simulataneous entry of characters into mutual\par
+   information examiner X or Y entry and sequence when in Edit Residues\par
+   mode\par
+-- Fixed glich that caused ruler to not extend to end of window in very\par
+   high screen resolutions with small font size\par
+-- Fixed problem (I think) with disappearing window controls (minimize,\par
+   maximize and close controls)\par
+  \par
+The following changes and/or fixes have been made since version v4.5.10:\par
+\par
+-- Scroll a full screen at a time with the PageUp/PageDown keys and \par
+   with Ctrl+arrow keys -- also refined cursor movement in edit mode\par
+   and keyboard-controlled scrolling\par
+-- BioEdit now remembers your last window state as the default\par
+-- Fixed a bug in the single sequence edit window -- applying twice\par
+   in a row after creating a new sequence no longer causes an access\par
+   violation\par
+-- Improved speed of dynamic shading of protein alignments in the edit \par
+   window \par
+\par
+The following changes and/or fixes have been made since version v4.5.9:\par
+\par
+-- Fixed bug in edit-window shading (maximizing window shouldn't cause\par
+   a problem now).\par
+-- Added Select to End, Select to Beginning and Select Residues of  \par
+   Selected Sequences functions\par
+-- Changed open and save file dialogs to remember file extensions\par
+   and last directory as defaults\par
+-- Added recent file list to the file menu\par
+-- Added function to open an edit box at the current cursor position\par
+   (when in Edit Residues mode) \par
+-- Added Tile and Cascade window functions\par
+\par
+The following changes and/or fixes have been made since version v4.5.8:\par
+\par
+-- Added identity/similarity-based shading in the alignment window\par
+-- Fixed a bug in the matrix plotter which caused it to periodically\par
+   crash when plotting a half matrix (above diagonal only).\par
+-- Fixed bug in N-best reporting of mutual information and N-best and \par
+   P-best reports when data are organized for the whole alignment rather\par
+   than by position (I forgot that those things had never been finished).\par
+\par
+The following changes and/or fixes have been made since version v4.5.7:\par
+\par
+-- Added information-based searching for conserved segments (may be \par
+   useful for designing PCR primers or defining motifs)\par
+-- Made the sequence titles window adjustable in width\par
+-- Fixed bug in six-frame translations:  An "N" in the sequence no \par
+   longer causes an amino acid to be skipped\par
+-- Added a "Minimize Alignment to Mask" function to allow trimming\par
+   an alignment to positions present in a mask sequence\par
+-- Added positional numerical summary for nucleotide alignments\par
+-- Changed entropy plots to area plots that resize with the window\par
+-- Added a full-text summary of entropy (Hx) values when an entropy\par
+   plot is run \par
+-- Got rid of the "three-way information" thing (too much noise to be\par
+   useful)\par
+\par
+\par
+The following changes and/or fixes have been made since version v4.5.6:\par
+\par
+-- The vertical split has been  improved -- no longer flickers wildly \par
+   when going between windows (also, no longer "left" and "right" \par
+   panes -- it's just one window now).  The horizontal split view is\par
+   still not-so-great.\par
+-- Added option to hide panels for controls at top (to allow for a bigger\par
+   sequence editing window)\par
+-- Sped-up right-click driven insertions and deletions.  Added option\par
+   to reverse mouse buttons (to allow inserting and deleting gaps with\par
+   a left click)\par
+-- Fixed glich in window updating when switching between color and B&W\par
+-- Fixed glich in translations on restriction maps -- spacing was off if\par
+   an "X" resulted from a codon with a non-A, C, G or U/T character.\par
+-- Added menu items for all button-driven controls\par
+-- "Lock gaps" no longer causes an error when residue selection goes \par
+   beyonf the end of a sequence.\par
+\par
+\par
+The following changes and/or fixes have been made since version v4.5.5:\par
+\par
+-- Fixed bug in residue selecting that was introduced with the sequence\par
+   handling rewrite:  The location of a selected block of residues was\par
+   not scrolling correctly in the horizontal direction\par
+-- Changed the way the matrix plotter draws matrices.  The speed is\par
+   improved several hundred fold.  \par
+-- Added threshold control to matrix plotter.\par
+\par
+The following changes and/or fixes have been made since version v4.5.4:\par
+\par
+-- Fixed glich in amino acid composition reporting -- previously, non-\par
+   amino acid characters were assigned a mass of 110 Da.  Now, only 'X'\par
+   is assigned 110, other characters are 0 Da (not counted as amino \par
+   acids).  The weight of 'B' is considered the average of 'D' and 'N',\par
+   and the weight of 'Z' is the average of 'E' and 'Q'.  Also, a stop \par
+   codon at the end of a sequence no longer adds 1 amino acid to the\par
+   reported length of the sequence.\par
+-- A couple of changes were made to the accessory application \par
+   configuration interface and the way accessory apps are run:\par
+      1. Options to include or not include the input and output files in\par
+         the command line were added, as well as the option to include\par
+         them at the beginning or end of the command line.\par
+      2. changed the method of calling accessory apps:  redirection of \par
+         stdin and stdout now *appears* to work correctly in all cases\par
+         The few PHYLIP programs distributed with BioEdit now have stdin\par
+         redirected so they may be run fully automated.\par
+-- Forgot to report in an earlier version: a bug in converting selected\par
+   regions to lowercase was fixed (left out 'A')\par
+\par
+The following changes and/or fixes have been made since version v4.5.3:\par
+\par
+-- The on-line help system was updated (the printable documentation \par
+   still needs updating -- also the WWW documaentation needs to be \par
+   updated (don't know when that'll get done)).\par
+-- Fixed a bug in resizing split windows (introduced with version \par
+   4.5.3 -- would cause an exception when the window was increased \par
+   vertically due to an oversight in creating a new graphic sequence\par
+   display object).\par
+\par
+The following changes and/or fixes have been made since version v4.5.2:\par
+\par
+-- Sequence handling and memory allocation for sequences was re-written.  \par
+   Alignments load much faster and editing of large alignments is more \par
+   reasonable.  When using the new BioEdit Project file format, the \par
+   prokaryotic 16S rRNA alignment (6205 sequences, 29 Mb file) opens in \par
+   less than 10 sec. on a Pentium 233 MHz with 80 Mb RAM. \par
+-- Created a new binary file format (the BioEdit Project file) for fast \par
+   Open and Save of large alignments.\par
+-- A bug in formatting when exporting an aligment as raw text was fixed \par
+   (the spacing would be randomly messed up -- this bug was introduced \par
+   with version 4.3.8 and was only recently discovered because this \par
+   feature apparently does not get used much). \par
+-- Two bugs in the vertical split window view were fixed:  \par
+     1.  When the original window's vertical scrollbar was not at the top, \par
+         the right side of the split window would start out of register \par
+         with the left side.\par
+     2.  The left side of the window would not scroll all the way to the \par
+         end.\par
+-- A couple of changes to the sequence edit box:\par
+     1.  The first digit of ruler positions >1,000,000 is no longer deleted\par
+         from the ruler bar.\par
+     2.  The "Delete" key now works in the edit box as well as "Backspace"\par
+-- A typo on the vertical axis of Eisenberg mean hydrophobic moment plots\par
+   was fixed.\par
+-- Changes to matrix plotter:\par
+     1.  Clicking on the plot when there is no 1-D line plot open no longer \par
+         crashes the program\par
+     2.  Highlighting of the selected matrix position on the plot has been\par
+         fixed (the selected position is inverted and outlined).\par
+     3.  The data summary reported for a highlighted matrix position reflects\par
+         the position numbers in the matrix file rather than the absolute \par
+         row or column number (x and y position numbers may be discontinuous,\par
+         as when alignment numbering is used to generate the Mxy data or when\par
+         a numbering mask different from the sequence mask is used).\par
+     4.  The row or column numbers shown on the 1-D matrix row/column plots \par
+         reflect the position numbers in the matrix file.\par
+     5.  A bug in reporting of the current row or column that showed up when an\par
+         asymmetric section of a matrix file was plotted has been fixed (if a \par
+         matrix contained more rows than columns, row numbers beyond the total\par
+         number of columns would be mis-reported).\par
+-- "Flags" are now available to graphically mark any position in an alignment\par
+   for keeping track of positions while when going back and forth a lot.\par
+-- The sequences have been crunched together slightly for a tighter view with \par
+   more sequence data on the screen at once.\par
+-- User may enable or disable position reporting at the mouse arrow.\par
+     \par
+\par
+The following changes and/or fixes have been made since version v4.5.1:\par
+\par
+-- Added option to translate selected regions of nucleic acid sequences\par
+   for formatted translation with codon summary, with the option to \par
+   display the entire nucleic acid sequence or only the translated region\par
+-- Added option for single-letter or three-letter codes for amino acids\par
+   in formatted translations\par
+-- Fixed a couple of bugs related to non-U.S. versions of Windows: errors\par
+   resulting from the difference between U.S. and European decimal separators\par
+   (period vs comma) have been fixed in the text print, RNA anaylises outputs,\par
+   the matrix plotter, and formatted translations. \par
+-- Updated matrix plotter to provide a summary of matrix dimensions before\par
+   loading up a matrix, and added the capability to plot user-defined regions\par
+   of matrices.  The plotter can now handle a nearly unlimited matrix size (but\par
+   can still only plot ca. 1500 x 1500 (maybe up to about 2000 x 2000) at one\par
+   time.  The largest file tested was 179 Mb (5183 x 5183).\par
+-- Expanded sequence limit to 10000 (sequence size is limited only by system \par
+   resources and speed). \par
+\par
+The following changes and/or fixes have been made since version v4.5.0:\par
+\par
+-- Vertical split window view was added\par
+-- About 16 billion bugs were fixed in the split window view synchronization\par
+\par
+The following changes and/or fixes have been made since version v4.4.2:\par
+\par
+-- Improved shaded views:  added color table-based shading, shading with\par
+   sequences in color, and improved Metafile copying\par
+-- New sequence edit box, with sequence view, ruler and color\par
+-- Added ORF searching (under Nucleic Acid submenu of Sequence menu)\par
+-- Added split window option for simultaneous editing of two different \par
+   places in the same file\par
+\par
+The following changes and/or fixes have been made since version v4.4.1:\par
+\par
+-- blastx was added to the local BLAST interface\par
+-- Image Export (Bitmap or Windows Metafile) added to plasmid utility\par
+   with variable output size options\par
+-- Clipboard copy as a Windows Metafile added to plasmid utility and\par
+   to shaded graphic view utility\par
+\par
+\par
+The following changes and/or fixes have been made since version v4.4.0:\par
+\par
+-- Fixed "Cut" and "Copy" options for working with linked \par
+   nucleotide/protein views.\par
+-- Added user control over menu shortcuts in alignment documents\par
+   (to customize shortcuts, go to "Customize Menu Shortcuts" from\par
+   the "View" menu)\par
+-- Added "Auto-Update View Options" item under the "View" menu -- \par
+   when checked, the "Save Options as Default" item is not visible,\par
+   and view options are automatically saved whenever a change is\par
+   made\par
+-- Added multiple file handling for opening and importing files\par
+-- Fixed redraw of ends of sequences when in a non-typeset font.\par
+\par
+\par
+The following changes and/or fixes have been made since version v4.3.10:\par
+\par
+-- Fixed bug in translating and translation toggling (no longer\par
+   bombs out after several translations)\par
+-- Non-typeset font handling was improved for the editing window\par
+   and in graphic shaded view\par
+-- Read filters for NBRF/PIR and Phylip 4 formats were improved\par
+-- Monochrome sequence view fixed (can't remember when or how\par
+   I broke it -- but it got broken).\par
+-- Three options were added for handling gaps for translating\par
+   when toggling between nucleotide and protein views:\par
+      1. gaps automatically adjusted to occur in groups of three\par
+         that do not disrupt codons\par
+      2. gaps that disrupt codons or do not occur in groups of \par
+         three may be ignored in trnaslating, but no automatic\par
+         adjustment of gaps\par
+      3. No automatic adjustments to gaps made, and gaps not\par
+         ignored when translating \par
+\par
+\par
+The following changes and/or fixes have been made since version v4.3.9:\par
+\par
+-- Two bugs that were introduced into version 4.3.9 were fixed:\par
+      1.  Access Violation that would occur after previewing "Print \par
+          Alignment as text"\par
+      2.  Access Violation that would occur upon running mutual \par
+          information analysis\par
+\par
+* These two bugs only occurred in version 4.3.9 *\par
+\par
+ \par
+The following changes and/or fixes have been made since version v4.3.8:\par
+\par
+-- The program was restructured internally to use less memory and much \par
+   fewer system resources.  As a result, the program loads much faster \par
+   and is not as demanding of the operating system.  If you have \par
+   experienced any trouble with starting BioEdit, this may solve the \par
+   problem.\par
+-- Two bugs were fixed in the display of selected residues:\par
+      1. The entire selection is now highlighted correctly in very \par
+         long stretches of selected residues (more than ca. 25000 \par
+         residues).\par
+      2. When selecting entire columns by selecting on the sequence\par
+         position ruler, the selection highlighting would sometimes\par
+         get broken, with some selections not appearing highlighted.\par
+         This has been fixed.  \par
+\par
+The following changes and/or fixes have been made since version v4.3.7:\par
+\par
+-- Added click-select capability fo viewing data points in the matrix \par
+   plotter\par
+-- When creating a line graph from matrix data, the row selected on \par
+   the matrix plotter is graphed\par
+-- When toggling between row and column views in matrix row/column\par
+   graphs, the selected data point on the matrix plotter is used\par
+-- When rows or columns are scrolled through on a line graph, the \par
+   selected data point on the matrix plotter (if there is one) is \par
+   updated to match\par
+-- Rows or column may be selected for an open matrix line graph by\par
+   selecting a point on the matrix plotter.\par
+-- Fixed a bug in memory allocation for the matrix plotter:  The last\par
+   point of the matrix no longer disappears\par
+-- Matrix table reading is now more flexible (It can handle \par
+   inappropriate spaces, tabs or returns in the file without giving\par
+   an error)\par
+-- Matrix plotter now read .csv (comma-delimited) matrices as well as\par
+   tab-delimited\par
+-- A bug was fixed for updating feature titles in the plasmid drawing\par
+   utility:  The updated title is selected and sized correctly on the \par
+   screen now\par
+-- Linear vector maps should now shade better on a grayscale laser\par
+   printer (only circular maps were fixed previously)\par
+-- Moving the ends of horizontal or vertical arrows in the plasmid \par
+   drawing utility now works correctly (doesn't get stuck horizontal \par
+   or vertical anymore)\par
+-- A bug in the new nucleotide/protein translation view toggling was\par
+   fixed:  Previously, if gaps were accidentally introduced into the last \par
+   codon of a nucleotide sequence and several gaps also occurred at the \par
+   end of the sequence, an error would occur when BioEdit attempted to\par
+   readjust gaps to mend codons.  This should no longer be a problem\par
+  \par
+\par
+The following changes and/or fixes have been made since version v4.3.6:\par
+\par
+-- The on-line help was updated with a full searchable index and full-\par
+   text search capability\par
+-- Nucleotide sequences which encode proteins may be switched between \par
+   their protein and nucleic acid sequences, and alignments may be \par
+   edited in either view\par
+-- Simple translations of nucleic acids and reverse translations of \par
+   proteins now take gaps into account rather than treating them as \par
+   unknown residues\par
+-- ClustalW may now be run without modifying sequence titles to be \par
+   non-redundant and 10 or few characters long\par
+-- When ClustalW is run from the accessory menu, the new alignment is \par
+   automatically updated with GenBank information (features, references, \par
+   accession, etc.) and full titles\par
+\par
+\par
+The following changes and/or fixes have been made since version 4.3.5:\par
+(These changes were both made to the plasmid drawing utility)\par
+\par
+-- Grouped drawing objects now scale as a unit\par
+-- Changed feature drawing to be more compatible with most printers\par
+\par
+\par
+The following changes and/or fixes have been made since version 4.3.4:\par
+(These changes were all made to the plasmid drawing utility)\par
+\par
+-- Added linear vector capability\par
+-- Made titles selectable and editable\par
+-- Made vector structure selectable and mouse-movable\par
+-- All objects and labels move along with vector when moving by hand\par
+-- Restriction sites and feature labels locations adjust themselves\par
+   when vector is resized\par
+-- Bug fixed in plasmid utility:  selecting multiple restriction site\par
+   labels then hitting "delete" was causing trouble with the enzyme-label\par
+   links\par
+\par
+\par
+The following bug fix has been made since version 4.3.3:\par
+\par
+-- A bug in the positioning of restriction cut sites at the origin \par
+   junction of circular DNA sequences was fixed.  This error occured\par
+   when running a map on circular sequences that had a restriction site \par
+   that overlapped the origin and cut after the overlap point.  This would\par
+   cause an error also when generating a plasmid map from such a sequence.\par
+\par
+\par
+The following changes and/or fixes have been made since version 4.3.2:\par
+\par
+-- Only one change:  The sequence editing box now behaves better, and there\par
+   is no set limit on the size of the sequence that can be opened and \par
+   edited in an edit box (well, actually the theoretical upper limit is\par
+   10 million bases, but that would be too slow to be worth it, anyway).\par
+-- The printable documentation has been updated (It's only available for\par
+   MS Word'97 or later).\par
+\par
+\par
+The following changes and/or fixes have been made since version 4.3.1:\par
+\par
+-- An incorrect value was corrected in the Kyte and Doolittle hydrophobicity \par
+   data (valine was set at -4.2 instead of 4.2).\par
+-- Arrows were added to plasmid drawing interface\par
+-- Enzyme marks automatically follow their labels\par
+-- linking of enzyme sites to their labels seems to work well now (if an\par
+   enzyme label is deleted, the site is taken off the map)\par
+-- Arrow heads on features automatically scale down in length when \par
+   the feature is short\par
+-- Print scale problem has been fixed for plasmid drawing\par
+\par
+The following changes and/or fixes have been made since version 4.1.1:\par
+\par
+-- Modified hydrophobicity plotting to conform to Kyte and Doolittle mean \par
+   hydrophobicity profile.\par
+-- Added file save and open capability for plasmid drawing files\par
+-- Added direct print for plasmid drawings\par
+-- Added object property editing for plasmid drawing\par
+-- Added copy and paste functions for plasmid drawing and modified \par
+   copy to allow copying objects as bitmaps for pasting into other apps\par
+-- Added object ordering support in plasmid drawing utility\par
+\par
+\par
+The following changes and/or fixes have been made since version 3.1.4:\par
+\par
+-- Several bug fixes and improvements in plasmid drawing utility.  This still\par
+   has a long way to go\par
+\par
+The following changes and/or fixes have been made since version 3.1.2:\par
+\par
+-- Added new graphical plasmid drawing and annotation program\par
+-- Fixed graphc alignment view (no system crash on multiple pages\par
+   anymore -- also made it more efficient)\par
+\par
+The following changes and/or fixes have been made since version 3.1.1:\par
+\par
+-- Fixed bugs in opening of Fasta files from Mac or UNIX format (was losing\par
+   the first line of sequence)\par
+-- Fixed minor bug in opening of NBRF/PIR sequences (spaces in the title would \par
+   truncate the title and tack extra characters at the beginning of the sequence\par
+-- Fixed color matching between series lines and legend of hydrophobicity plots\par
+-- Added scrolling/keyboard control of row/column number in line plots of\par
+   mutual information matrix data\par
+\par
+\par
+The following changes and/or fixes have been made since version 2.0.4:\par
+\par
+-- fixed bug in LOCUS field of GenBank files (was duplicationg part of the LOCUS in\par
+   some cases\par
+-- Better handling of Macintosh-formatted GenBank files\par
+-- Automatic scrolling in Grab and Drag mode.\par
+-- arrow key control over window scrolling\par
+-- added horizontal scroll speed controller\par
+-- Fixed information-responsive residue shading (capital/lowercase residues no longer seen\par
+   as different, and multiple gaps now reduce the alignment strength rather than increase it)\par
+-- Uppercase/lowercase, lock/unlock and degap control of sequence selections as well as \par
+   complete sequences.\par
+-- Added zoom capabilities to RNA data matrix plots\par
+-- Added Single-row plotting for individual rows of data matrices, with the option to\par
+   print graphs or copy as Bitmap, Metafile or Enhanced Metafile.\par
+-- Added capability for three-way information analysis (doesn't seem to be very worthwhile, however).\par
+-- Fixed font handling in edit window to allow proper scaling of any font\par
+-- Added hydrophobicity/hydrophilicity profile plotting for proteins\par
+-- Added nucleotide and amino acid composition summaries and plots\par
+-- Added codon-parsed translation and codon-usage summaries for all three \par
+   frames of nucleotide sequences\par
+-- Reorganized some of the "Sequence" menu, now with separate protein and\par
+   nucleic acids submenus\par
+-- Added selection of restriction enzymes by manufacturer and reporting of \par
+   manufacturers that carry each enzyme\par
+-- Updated restriction enzyme table to gcgenz.811, from REBASE version 811 (Oct 28 98)\par
+   (added to BioEdit Nov 3 98) \par
+\par
+---------------------------------------------------------------------\par
+\par
+How to contact the author:\par
+\par
+Tom Hall\par
+760-201-6089\par
+tomandhall@gmail.com\par
+\par
+}
+ 

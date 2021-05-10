@@ -1,0 +1,27 @@
+License Agreement for BioEdit v7.7.1.0:
+BioEdit v7.7.1.0
+copyright (c) 1997-2021, Tom Hall
+
+***** By choosing to install this software you are accepting 
+the terms of this license.  If you do not want to accept these
+terms, you must not install the software *****
+
+Terms of license:
+BioEdit is offered free of charge.  BioEdit distributes some 
+government (NCBI) software and is not to be distributed for 
+money by any person for any reason.  This installation also 
+contains programs written by other authors and those programs 
+are subject to the copyrights and licenses specified by their 
+authors.  Permission is granted to anyone to redistribute 
+BioEdit free of charge, provided that original files are 
+distributed unaltered, but  redistribution of applications 
+included in the apps folder may require permission from 
+authors of accessory applications (see accessory application 
+list in the readme file for author information).
+
+** The author makes no guarantee as to the fitness or 
+suitability of this software for any purpose.  BioEdit
+is offered as is and no responsibility will befall the 
+author for any problems caused by or correlated with the 
+use of this software, including, but not limited to, 
+damages, non-suitability, misuse, data loss, or wasted time. **
